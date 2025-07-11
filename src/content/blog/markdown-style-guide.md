@@ -1,214 +1,106 @@
 ---
-title: 'Markdown Style Guide'
+title: 'Gustavo Rol'
 description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
 pubDate: 'Jun 19 2024'
-heroImage: '../../assets/blog-placeholder-1.jpg'
+heroImage: '../../assets/rol.jpg'
 ---
 
-Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
+Ecco una storia esoterica che ruota attorno alla figura enigmatica di **Gustavo Rol**:
 
-## Headings
+---
 
-The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
+**"La Porta di Smeraldo"**
 
-# H1
+Torino, inverno del 1963. La città sembrava sospesa in un silenzio irreale, come se sapesse che qualcosa di straordinario stesse per accadere. Gustavo Rol camminava lentamente sotto i portici di via Po, avvolto nel suo cappotto verde oliva, gli occhi assorti e lontani. Aveva ricevuto una lettera anonima quella mattina: un'unica frase, scritta con inchiostro porpora su carta pergamena:
 
-## H2
+*“Il varco si aprirà quando la musica non avrà più tempo.”*
 
-### H3
+Non era la prima volta che riceveva messaggi misteriosi. Da tempo, le sincronicità erano parte della sua vita quotidiana. Ma questo… questo era diverso. Il messaggio vibrava come un richiamo. Un ricordo? O forse un’avvisaglia?
 
-#### H4
+---
 
-##### H5
+Giunto a casa, Rol si sedette nello studio. I libri di alchimia, i diari di Paracelso, le lettere di amici lontani e vicini all’occulto: tutto era lì, in ordine perfetto, come una mappa tracciata da mani invisibili. Sul tavolo, la piccola scacchiera in madreperla sembrava pulsare alla luce del tramonto.
 
-###### H6
+Rol chiuse gli occhi. Vide il viso di suo padre, severo ma pieno d’amore, e poi un giardino di pietra, sospeso nel nulla, dove un uomo con una tunica azzurra gli tendeva una chiave.
 
-## Paragraph
+La visione scomparve con un suono, quasi un accordo sospeso.
 
-Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
+---
 
-Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
+Due giorni dopo, durante una cena privata a Villa Faraggiana, Rol parlò con l’arcivescovo di Torino, monsignor Torrigiani, che conosceva le doti dell’uomo e lo temeva quanto lo rispettava.
 
-## Images
+— «Lei è stato scelto, Gustavo», disse il prelato, fissandolo con occhi antichi. «Il messaggio è autentico. La Porta si sta aprendo. Ma occorre un testimone. E occorre un guardiano.»
 
-### Syntax
+Rol non rispose. Sapeva cosa implicava tutto questo. Da giovane, a Marsiglia, durante una febbre improvvisa, aveva avuto la visione della famosa **Tabula Smaragdina**, e da allora il colore verde lo perseguitava: nei sogni, nei segni, nei numeri. Tutto lo riportava lì.
 
-```markdown
-![Alt text](./full/or/relative/path/of/image)
-```
+L’alchimia non era solo trasmutazione dei metalli. Era trasmutazione dell’essere.
 
-### Output
+---
 
-![blog placeholder](../../assets/blog-placeholder-about.jpg)
+Una settimana dopo, Rol ricevette la visita di un uomo alto, con occhi neri come la pece. Si presentò come **Elian**, e portava con sé un piccolo cofanetto di legno nero.
 
-## Blockquotes
+— «Questa ti appartiene. È rimasta chiusa dal tempo di Akhenaton.»
 
-The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
+All’interno, una **gemma verde smeraldo**, pulsante. Non rifletteva la luce, la *emetteva*.
 
-### Blockquote without attribution
+Rol la riconobbe. Era la pietra vista nel sogno, e molto tempo prima, in un dipinto anonimo custodito a Chartres, in Francia. Una pietra associata alla leggenda di Lucifero, ma anche alla corona degli angeli caduti. Un simbolo di conoscenza che brucia.
 
-#### Syntax
+Elian proseguì:
 
-```markdown
-> Tiam, ad mint andaepu dandae nostion secatur sequo quae.  
-> **Note** that you can use _Markdown syntax_ within a blockquote.
-```
+— «La Porta di Smeraldo non è un luogo. È uno stato dell’essere. Si apre in un momento preciso, quando l’Anima ha trasceso il ritmo.»
 
-#### Output
+— «Quando la musica non ha più tempo…» sussurrò Rol, completando la frase.
 
-> Tiam, ad mint andaepu dandae nostion secatur sequo quae.  
-> **Note** that you can use _Markdown syntax_ within a blockquote.
+— «Esatto.»
 
-### Blockquote with attribution
+---
 
-#### Syntax
+La notte seguente, Rol si preparò. Accese una candela, si sedette di fronte allo specchio veneziano del suo studio, e posò la pietra davanti a sé. Prese il suo diario e scrisse una frase:
 
-```markdown
-> Don't communicate by sharing memory, share memory by communicating.<br>
-> — <cite>Rob Pike[^1]</cite>
-```
+*“Lo spirito è più reale della materia, perché la contiene.”*
 
-#### Output
+Poi chiuse gli occhi e lasciò che la musica interiore sorgesse. Non era una melodia udibile: era la vibrazione stessa dell’esistenza. Il battito di ciò che è prima del tempo.
 
-> Don't communicate by sharing memory, share memory by communicating.<br>
-> — <cite>Rob Pike[^1]</cite>
+All’improvviso, sentì un varco aprirsi: una fenditura nel reale. Si trovava in un luogo senza spazio. Non era né sogno né visione. Era *dentro*. Tutto era verde. Non un colore, ma una frequenza.
 
-[^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
+Davanti a lui, un’antica biblioteca: libri fatti di luce, pagine che cambiavano secondo il pensiero di chi leggeva.
 
-## Tables
+Una figura emerse. Elian? No. Era **lui stesso**, ma in un altro tempo. Un altro sé.
 
-### Syntax
+— «Ogni anima è un frammento di un'unica intelligenza. Sei pronto a ricordare?»
 
-```markdown
-| Italics   | Bold     | Code   |
-| --------- | -------- | ------ |
-| _italics_ | **bold** | `code` |
-```
+Rol annuì.
 
-### Output
+E il sé alternativo gli toccò il cuore con un dito.
 
-| Italics   | Bold     | Code   |
-| --------- | -------- | ------ |
-| _italics_ | **bold** | `code` |
+---
 
-## Code Blocks
+Quando riaprì gli occhi, erano passate tre ore. La pietra era scomparsa. Ma lui non era più lo stesso. Vide le onde del tempo scorrere come fili d’acqua. Sentiva il pensiero degli altri come echi lontani. E soprattutto, *sapeva*.
 
-### Syntax
+Sapeva che l’universo era un organismo vivente, e che il pensiero umano – se purificato – poteva modellare la realtà.
 
-we can use 3 backticks ``` in new line and write snippet and close with 3 backticks on new line and to highlight language specific syntax, write one word of language name after first 3 backticks, for eg. html, javascript, css, markdown, typescript, txt, bash
+Sapeva che ogni essere umano era una porta potenziale.
 
-````markdown
-```html
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Example HTML5 Document</title>
-  </head>
-  <body>
-    <p>Test</p>
-  </body>
-</html>
-```
-````
+---
 
-### Output
+Passarono mesi. Rol tornò alla sua vita quotidiana: le serate con gli amici, i giochi con le carte, le guarigioni misteriose. Ma dentro, qualcosa brillava come una stella che non conosceva l’alba.
 
-```html
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Example HTML5 Document</title>
-  </head>
-  <body>
-    <p>Test</p>
-  </body>
-</html>
-```
+Nel 1966, a Firenze, incontrò un giovane poeta che gli disse: «Ho sognato la tua voce, e in sogno hai detto che Dio non è al di fuori, ma *inatteso*, come un ricordo antico.»
 
-## List Types
+Rol sorrise. Il seme era stato piantato.
 
-### Ordered List
+---
 
-#### Syntax
+Nel suo diario, qualche anno dopo, scrisse:
 
-```markdown
-1. First item
-2. Second item
-3. Third item
-```
+*"Ho varcato la soglia della mente. Non ho trovato un Dio barcollante su troni di nubi, ma una fiamma silenziosa, che arde in ogni uomo. La magia è scienza ancora velata. La verità non ha testimoni: è un'esperienza. La mia missione non è rivelare, ma *risvegliare*."*
 
-#### Output
+---
 
-1. First item
-2. Second item
-3. Third item
+Nel 1972, ricevette una seconda lettera. Stessa calligrafia, stesso inchiostro:
 
-### Unordered List
+*“Quando la seconda Porta si aprirà, il tempo finirà di nuovo. Preparati.”*
 
-#### Syntax
+Ma quella, è un’altra storia.
 
-```markdown
-- List item
-- Another item
-- And another item
-```
-
-#### Output
-
-- List item
-- Another item
-- And another item
-
-### Nested list
-
-#### Syntax
-
-```markdown
-- Fruit
-  - Apple
-  - Orange
-  - Banana
-- Dairy
-  - Milk
-  - Cheese
-```
-
-#### Output
-
-- Fruit
-  - Apple
-  - Orange
-  - Banana
-- Dairy
-  - Milk
-  - Cheese
-
-## Other Elements — abbr, sub, sup, kbd, mark
-
-### Syntax
-
-```markdown
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
-
-H<sub>2</sub>O
-
-X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
-
-Press <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>Delete</kbd> to end the session.
-
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
-```
-
-### Output
-
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
-
-H<sub>2</sub>O
-
-X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
-
-Press <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>Delete</kbd> to end the session.
-
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
+ 
