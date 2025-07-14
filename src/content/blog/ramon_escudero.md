@@ -1,7 +1,7 @@
 ---
 title: 'Ramón Escudero'
 description: 'Filosofo iniziato, esploratore dei misteri iberici e studioso dell’occulto'
-pubDate: 'Jul 14 2025'
+pubDate: 'Jul 4 2025'
 heroImage: '../../assets/ramon_escudero.jpg'
 ---
 
