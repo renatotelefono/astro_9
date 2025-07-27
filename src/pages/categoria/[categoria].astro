@@ -3,46 +3,55 @@ import { getCollection } from 'astro:content';
 import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+import GoogleAnalytics from '../../components/GoogleAnalytics.astro';
+import ConsentBanner from '../../components/ConsentBanner.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
-
-  // Trova tutte le categorie uniche
   const categories = Array.from(
-    new Set(posts.map((post) => post.data.category).filter(Boolean))
+    new Set(posts.map((p) => p.data.category).filter(Boolean))
   );
-
-  return categories.map((categoria) => ({
-    params: { categoria }
+  return categories.map((cat) => ({
+    params: { categoria: cat }
   }));
 }
 
-const { categoria } = Astro.params as { categoria: string };
-const allPosts = await getCollection('blog');
+const { params } = Astro;
+const categoria = params.categoria;
 
-// Filtra i post per categoria
-const filteredPosts = allPosts.filter(
-  (post) => post.data.category?.toLowerCase() === categoria.toLowerCase()
+const posts = (await getCollection('blog')).filter(
+  (p) => p.data.category === categoria
 );
 ---
 
-<BaseHead title={`Categoria: ${categoria}`} description={`Post nella categoria ${categoria}`} />
+<BaseHead title={`Categoria: ${categoria}`} description={SITE_DESCRIPTION} />
+<ConsentBanner />
+<GoogleAnalytics />
+
 <Header />
 
 <main class="main-content">
-  <h1>Categoria: {categoria}</h1>
+  <h1 class="main-title">Categoria: {categoria}</h1>
 
-  {filteredPosts.length > 0 ? (
+  {posts.length === 0 ? (
+    <p>Nessun post trovato in questa categoria.</p>
+  ) : (
     <ul class="post-list">
-      {filteredPosts.map((post) => (
-        <li>
+      {posts.map((post) => (
+        <li class="post-item">
+          {post.data.heroImage && (
+            <img src={post.data.heroImage?.src} alt={post.data.title} class="post-image" />
+          )}
           <h2><a href={`/blog/${post.id}`}>{post.data.title}</a></h2>
           <p>{post.data.description}</p>
+          <p><strong>Pubblicato:</strong> {post.data.pubDate.toDateString()}</p>
+          {post.data.updatedDate && (
+            <p><strong>Aggiornato:</strong> {post.data.updatedDate.toDateString()}</p>
+          )}
         </li>
       ))}
     </ul>
-  ) : (
-    <p>Nessun post trovato per questa categoria.</p>
   )}
 </main>
 
@@ -50,30 +59,51 @@ const filteredPosts = allPosts.filter(
 
 <style>
   .main-content {
-    padding: 2rem;
     text-align: center;
-    color: #c0a36e;
+    padding: 3rem 1rem;
+  }
+
+  .main-title {
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 10px #c0a36e;
+    color: white;
   }
 
   .post-list {
     list-style: none;
     padding: 0;
-    margin-top: 2rem;
+    margin: 0 auto;
+    max-width: 700px;
   }
 
-  .post-list li {
-    margin-bottom: 2rem;
-    border-bottom: 1px solid #c0a36e55;
+  .post-item {
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid #c0a36e44;
     padding-bottom: 1rem;
+    text-align: left;
   }
 
-  a {
-    color: #ffc773;
+  .post-item h2 {
+    color: #ddb892;
+  }
+
+  .post-item h2 a {
     text-decoration: none;
+    color: #ddb892;
   }
 
-  a:hover {
-    color: #fff;
-    text-shadow: 0 0 5px #ffc773;
+  .post-item h2 a:hover {
+    color: #ff0000;
+    text-shadow: 0 0 5px #ff0000;
+  }
+
+  .post-image {
+    width: 100%;
+    max-width: 640px;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    border: 2px solid #c0a36e44;
   }
 </style>
