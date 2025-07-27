@@ -1,0 +1,79 @@
+---
+import { getCollection } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+
+  // Trova tutte le categorie uniche
+  const categories = Array.from(
+    new Set(posts.map((post) => post.data.category).filter(Boolean))
+  );
+
+  return categories.map((categoria) => ({
+    params: { categoria }
+  }));
+}
+
+const { categoria } = Astro.params as { categoria: string };
+const allPosts = await getCollection('blog');
+
+// Filtra i post per categoria
+const filteredPosts = allPosts.filter(
+  (post) => post.data.category?.toLowerCase() === categoria.toLowerCase()
+);
+---
+
+<BaseHead title={`Categoria: ${categoria}`} description={`Post nella categoria ${categoria}`} />
+<Header />
+
+<main class="main-content">
+  <h1>Categoria: {categoria}</h1>
+
+  {filteredPosts.length > 0 ? (
+    <ul class="post-list">
+      {filteredPosts.map((post) => (
+        <li>
+          <h2><a href={`/blog/${post.id}`}>{post.data.title}</a></h2>
+          <p>{post.data.description}</p>
+        </li>
+      ))}
+    </ul>
+  ) : (
+    <p>Nessun post trovato per questa categoria.</p>
+  )}
+</main>
+
+<Footer />
+
+<style>
+  .main-content {
+    padding: 2rem;
+    text-align: center;
+    color: #c0a36e;
+  }
+
+  .post-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+  }
+
+  .post-list li {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #c0a36e55;
+    padding-bottom: 1rem;
+  }
+
+  a {
+    color: #ffc773;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #ffc773;
+  }
+</style>
