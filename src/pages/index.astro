@@ -33,7 +33,7 @@ const categories = Array.from(
   <img src="/assets/esoteric.png" alt="Un posto esoterico" width="600" class="main-image" />
 
   <section class="categories">
-    <h2>Categorie</h2>
+   <h2 style="color: rgb(234, 19, 19);">Categorie</h2>
     <ul class="category-list">
       {categories.map((category) => (
         <li><a href={`/categoria/${category}`} class="category-link">{category}</a></li>
@@ -41,13 +41,11 @@ const categories = Array.from(
     </ul>
   </section>
 
-  <p class="intro-text">Seguendo il mio percorso capirai tante cose</p>
+  <p class="intro-text">qui troverai molte informazioni</p>
 
-  <p class="intro-text">
-     e vedrai delle storie incredibili
-  </p>
+ 
 
-  <p class="intro-quote">“Come in alto, così in basso.” — Tavola di Smeraldo</p>
+  
 </main>
 
 <Footer />
