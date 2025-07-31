@@ -1,6 +1,6 @@
 ---
 title: '06_Cups'
-description: 'Nostalgia, ricordi d'infanzia, connessioni autentiche del passato'
+description: 'Nostalgia, ricordi di infanzia, connessioni autentiche del passato'
 pubDate: 'Jul 30 2025'
 category: 'arcani minori: Coppe'
 heroImage: '../../assets/RWS1909_-_Cups_06.jpeg'
